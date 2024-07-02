@@ -1,26 +1,22 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
+<script setup>
+import Header from './components/Header.vue'
+import CardList from "@/components/CardList.vue";
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
+<template>
+	<div class="bg-white w-4/5 m-auto rounded-xl shadow-xl mt-14">
+		<Header />
+
+	<div class="p-10">
+		<h2 class="text-xl font-bold mb-8">Все кроссовки</h2>
+
+		<CardList />
+	</div>
+	</div>
+</template>
+
+
+<style></style>
